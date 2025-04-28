@@ -1,0 +1,14 @@
+{
+    "name": "lv3",
+    "version": "1.0.0",
+    "description": "Weather application",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "papaparse": "^5.4.1"
+    },
+    "type": "commonjs"
+  }

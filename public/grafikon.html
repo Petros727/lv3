@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grafikon vremenskih podataka: kiša, sunce, oblačno, snijeg.">
+    <meta name="author" content="Marko Petričević">
+    <link rel="stylesheet" href="style_grafikon.css">
+    <title>Grafikon vremenskih podataka</title>
+</head>
+<body>
+    <header>
+        <h1>Grafikon vremenskih podataka</h1>
+    </header>
+    <nav aria-label="Glavna navigacija">
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="grafikon.html">Grafikon</a></li>
+            <li><a href="slike.html">Galerija</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section aria-label="Vremenski grafikon">
+            <h2>Postotak vremena</h2>
+            <div class="chart-container">
+                <div class="bar" style="--height: 25;" aria-label="Kiša: 25%"></div>
+                <div class="bar" style="--height: 40;" aria-label="Sunce: 40%"></div>
+                <div class="bar" style="--height: 30;" aria-label="Oblačno: 30%"></div>
+                <div class="bar" style="--height: 5;" aria-label="Snijeg: 5%"></div>
+                <div class="pie-chart" aria-label="Kiša: 25%, Sunce: 40%, Oblačno: 30%, Snijeg: 5%"></div>
+            </div>
+            <p>Kiša: 25%, Sunce: 40%, Oblačno: 30%, Snijeg: 5%</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025. Web Programiranje. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>

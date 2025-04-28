@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerija slika povezanih s vremenskim uvjetima.">
+    <meta name="author" content="Marko Petričević">
+    <link rel="stylesheet" href="style_slike.css">
+    <title>Galerija slika</title>
+</head>
+<body>
+    <header>
+        <h1>Galerija slika</h1>
+    </header>
+    <nav aria-label="Glavna navigacija">
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="grafikon.html">Grafikon</a></li>
+            <li><a href="slike.html">Galerija</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="galerija" aria-label="Galerija slika">
+            <h2>Vremenske fotografije</h2>
+            <input type="checkbox" id="img1" class="img-toggle">
+            <label for="img1" class="galerija_slika">
+                <img src="https://unsplash.it/300/200?random=1" alt="Sunčano vrijeme" loading="lazy">
+                <div class="overlay">
+                    <span class="close">X</span>
+                    <span class="caption">Sunčano vrijeme - 1/6</span>
+                </div>
+            </label>
+            <input type="checkbox" id="img2" class="img-toggle">
+            <label for="img2" class="galerija_slika">
+                <img src="https://unsplash.it/300/200?random=2" alt="Kišovito vrijeme" loading="lazy">
+                <div class="overlay">
+                    <span class="close">X</span>
+                    <span class="caption">Kišovito vrijeme - 2/6</span>
+                </div>
+            </label>
+            <input type="checkbox" id="img3" class="img-toggle">
+            <label for="img3" class="galerija_slika">
+                <img src="https://unsplash.it/300/200?random=3" alt="Oblačno vrijeme" loading="lazy">
+                <div class="overlay">
+                    <span class="close">X</span>
+                    <span class="caption">Oblačno vrijeme - 3/6</span>
+                </div>
+            </label>
+            <input type="checkbox" id="img4" class="img-toggle">
+            <label for="img4" class="galerija_slika">
+                <img src="https://unsplash.it/300/200?random=4" alt="Magla" loading="lazy">
+                <div class="overlay">
+                    <span class="close">X</span>
+                    <span class="caption">Magla - 4/6</span>
+                </div>
+            </label>
+            <input type="checkbox" id="img5" class="img-toggle">
+            <label for="img5" class="galerija_slika">
+                <img src="https://unsplash.it/300/200?random=5" alt="Snijeg" loading="lazy">
+                <div class="overlay">
+                    <span class="close">X</span>
+                    <span class="caption">Snijeg - 5/6</span>
+                </div>
+            </label>
+            <input type="checkbox" id="img6" class="img-toggle">
+            <label for="img6" class="galerija_slika">
+                <img src="https://unsplash.it/300/200?random=6" alt="Vjetar" loading="lazy">
+                <div class="overlay">
+                    <span class="close">X</span>
+                    <span class="caption">Vjetar - 6/6</span>
+                </div>
+            </label>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025. Web Programiranje. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>

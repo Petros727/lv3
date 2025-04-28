@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vremenska prognoza s detaljnim podacima o temperaturi, vlažnosti i uvjetima.">
+    <meta name="author" content="Marko Petričević">
+    <meta http-equiv="refresh" content="30">
+    <link rel="stylesheet" href="style.css">
+    <title>Vremenska prognoza</title>
+</head>
+<body>
+    <header>
+        <h1>Dobrodošli na moju web stranicu za vremensku prognozu</h1>
+    </header>
+    <nav aria-label="Glavna navigacija">
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="grafikon.html">Grafikon</a></li>
+            <li><a href="slike.html">Galerija</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section aria-label="Vremenski podaci">
+            <h2>Vremenski Podaci</h2>
+            <div class="filter-section">
+                <div class="filter-group">
+                    <label for="filter-season">Sezona:</label>
+                    <select id="filter-season">
+                        <option value="">Sve</option>
+                        <option value="Winter">Zima</option>
+                        <option value="Spring">Proljeće</option>
+                        <option value="Summer">Ljeto</option>
+                        <option value="Autumn">Jesen</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-location">Lokacija:</label>
+                    <input type="text" id="filter-location" placeholder="npr. inland">
+                </div>
+                <div class="filter-group">
+                    <label for="filter-temp">Minimalna temperatura:</label>
+                    <input type="range" id="filter-temp" min="-20" max="60" value="0">
+                    <span id="temp-value">0°C</span>
+                </div>
+                <button id="primijeni-filtere">Primijeni filtere</button>
+            </div>
+            <div class="table-container">
+                <table role="table" id="vremenska-tablica" aria-label="Vremenski podaci">
+                    <thead>
+                        <tr>
+                            <th scope="col">Temp (°C)</th>
+                            <th scope="col">Humidity (%)</th>
+                            <th scope="col">Wind Speed (km/h)</th>
+                            <th scope="col">Precip (%)</th>
+                            <th scope="col">Cloud Cover</th>
+                            <th scope="col">Pressure</th>
+                            <th scope="col">UV Index</th>
+                            <th scope="col">Season</th>
+                            <th scope="col">Visibility (km)</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Weather</th>
+                            <th scope="col">Akcija</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <aside aria-label="Vremenska slika">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="https://geek.hr/znanost/wp-content/uploads/sites/14/2013/01/mjesec.jpg">
+                        <img src="https://as2.ftcdn.net/v2/jpg/02/76/64/59/1000_F_276645930_rz1Ip1QQEywflmc5IkwJwzN0doV4aEeH.jpg" alt="Sunce ili Mjesec" loading="lazy">
+                    </picture>
+                </aside>
+            </div>
+            <div class="plan-section">
+                <h2>Plan aktivnosti</h2>
+                <ul id="lista-plana"></ul>
+                <button id="potvrdi-plan">Potvrdi plan</button>
+            </div>
+        </section>
+        <article aria-label="Najnovije vijesti">
+            <h2>Najnovije vijesti</h2>
+            <p>Prognoza za sljedeći tjedan predviđa promjenjivo vrijeme s povremenim kišama.</p>
+        </article>
+    </main>
+    <footer>
+        <p>© 2025. Web Programiranje. Sva prava pridržana.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
